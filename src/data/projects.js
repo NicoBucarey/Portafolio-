@@ -1,22 +1,22 @@
 // src/data/projects.js
 
 export const projects = [
-  {
-    id: 1,
-    title: "Sistema de gestión para profesionales de la salud",
-    description:
-      "Aplicación full stack para la gestión de pacientes, turnos y usuarios con distintos roles.",
-    highlights: [
-      "Roles de usuario (admin, profesional, paciente, secretario)",
-      "Gestión de turnos y pacientes",
-      "Arquitectura full stack",
-    ],
-    technologies: ["React", "Node.js", "Express", "PostgreSQL"],
-    image: null,
-    demoUrl: null,
-    repoUrl: "https://github.com/tu-usuario/proyecto-salud",
-    featured: true,
-  },
+  // {
+  //   id: 1,
+  //   title: "Sistema de gestión para profesionales de la salud",
+  //   description:
+  //     "Aplicación full stack para la gestión de pacientes, turnos y usuarios con distintos roles.",
+  //   highlights: [
+  //     "Roles de usuario (admin, profesional, paciente, secretario)",
+  //     "Gestión de turnos y pacientes",
+  //     "Arquitectura full stack",
+  //   ],
+  //   technologies: ["React", "Node.js", "Express", "PostgreSQL"],
+  //   image: null,
+  //   demoUrl: null,
+  //   repoUrl: "https://github.com/tu-usuario/proyecto-salud",
+  //   // featured: true, // Comentado temporalmente
+  // },
 
   {
     id: 2,
@@ -32,7 +32,7 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "API TMDB"],
     image: "/projects/lookin.png",
     demoUrl: "https://lookin-alpha.vercel.app/",
-    repoUrl: "https://github.com/tu-usuario/lookin",
+    repoUrl: "https://github.com/NicoBucarey/Lookin.git",
     featured: false,
   },
 
@@ -50,7 +50,7 @@ export const projects = [
     technologies: ["React"],
     image: "/projects/nerdflix.png",
     demoUrl: "https://tp-react-ochre.vercel.app/",
-    repoUrl: "https://github.com/tu-usuario/nerdflix",
+    repoUrl: "https://github.com/NicoBucarey/Nerflix.git",
     featured: false,
   },
 
@@ -69,7 +69,7 @@ export const projects = [
     image: "/projects/blog-turismo.png",
     demoUrl:
       "https://laravel-blog-turismo-argentino-production.up.railway.app/",
-    repoUrl: "https://github.com/tuusuario/laravel-blog-turismo-argentino",
+    repoUrl: "https://github.com/NicoBucarey/Laravel---Blog-Turismo-Argentino.git",
     featured: false,
   },
 ];
