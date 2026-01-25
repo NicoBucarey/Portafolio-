@@ -2,7 +2,7 @@ import profileImg from '../assets/profile.jpg'
 
 function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-center px-4 overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center px-4 pb-8 overflow-hidden">
 
       {/* fondo decorativo moderno */}
       <div className="absolute inset-0 -z-10">
@@ -30,40 +30,41 @@ function Hero() {
           </p>
 
           <p className="text-slate-400 max-w-xl mb-10">
-            Desarrollo aplicaciones web full stack, integrando frontend, backend
+            Desarrollo Aplicaciones Web, integrando frontend, backend
             y bases de datos, utilizando distintas tecnologías y enfocándome en
             buenas prácticas y aprendizaje continuo.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-col gap-4 items-center">
             <a
               href="#projects"
               className="group px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 
                          rounded-xl text-white font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-2xl 
-                         hover:shadow-indigo-500/25 relative overflow-hidden"
+                         hover:shadow-indigo-500/25 relative overflow-hidden w-full sm:w-auto"
             >
               <span className="relative z-10">Ver proyectos</span>
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
 
-            <div className="flex gap-3">
-              <a
-                href="#contact"
-                className="group px-6 py-3 border border-slate-600 hover:border-indigo-400 rounded-xl text-slate-300 hover:text-white 
-                           font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-slate-500/20 
-                           backdrop-blur-sm bg-slate-800/30 hover:bg-slate-700/40"
-              >
-                <span className="relative z-10">✉ Email</span>
-              </a>
-              
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
                 href="https://wa.me/5492994573646" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-6 py-3 bg-green-600 hover:bg-green-500 rounded-xl text-white font-medium 
-                           transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/20"
+                           transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/20
+                           w-full sm:w-auto text-center"
               >
                 <span className="relative z-10">📱 WhatsApp</span>
+              </a>
+              
+              <a
+                href="#contact"
+                className="group px-6 py-3 border border-slate-600 hover:border-indigo-400 rounded-xl text-slate-300 hover:text-white 
+                           font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-slate-500/20 
+                           backdrop-blur-sm bg-slate-800/30 hover:bg-slate-700/40 w-full sm:w-auto text-center"
+              >
+                <span className="relative z-10">✉ Email</span>
               </a>
             </div>
           </div>

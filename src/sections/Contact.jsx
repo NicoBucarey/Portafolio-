@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 
 function Contact() {
   return (
-    <section id="contact" className="py-16 px-4 relative overflow-hidden">
+    <section id="contact" className="py-16 px-4 relative overflow-hidden scroll-mt-20">
       {/* Elemento decorativo */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 
                       bg-gradient-to-r from-indigo-600/10 to-purple-600/10 rounded-full blur-3xl" />

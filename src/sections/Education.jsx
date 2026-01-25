@@ -1,6 +1,6 @@
 function Education() {
   return (
-    <section id="education" className="py-16 px-4 relative overflow-hidden">
+    <section id="education" className="py-16 px-4 relative overflow-hidden scroll-mt-20">
       {/* Elemento decorativo */}
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-r from-indigo-600/10 to-purple-600/10 rounded-full blur-3xl" />
       

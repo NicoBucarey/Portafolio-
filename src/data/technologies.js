@@ -50,7 +50,6 @@ export const technologyGroups = [
     items: [
       { name: 'Git', icon: SiGit },
       { name: 'GitHub', icon: SiGithub },
-      { name: 'Docker', icon: SiDocker },
       { name: 'Postman', icon: SiPostman },
     ],
   },

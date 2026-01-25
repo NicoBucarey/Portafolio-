@@ -1,14 +1,14 @@
 function About() {
   return (
-    <section id="about" className="py-12 px-4 relative overflow-hidden">
+    <section id="about" className="py-12 px-4 relative overflow-hidden scroll-mt-20">
       {/* Elemento decorativo de fondo */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 
                       bg-gradient-to-r from-purple-600/10 to-indigo-600/10 rounded-full blur-3xl" />
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
 
-        <h2 className="text-3xl sm:text-4xl font-bold mb-10 bg-gradient-to-r from-white via-indigo-200 to-purple-200 
-                       bg-clip-text text-transparent">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-white via-indigo-200 to-purple-200 
+                       bg-clip-text text-transparent whitespace-nowrap">
           Sobre mí
         </h2>
 
