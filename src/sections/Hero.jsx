@@ -35,7 +35,7 @@ function Hero() {
             buenas prácticas y aprendizaje continuo.
           </p>
 
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
             <a
               href="#projects"
               className="group px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 
