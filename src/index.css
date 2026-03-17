@@ -33,12 +33,18 @@
 /* Scroll suave para toda la página */
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 /* Mejoras tipográficas */
 @layer base {
   body {
+    @apply bg-slate-900 text-slate-100;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  #root {
+    @apply bg-slate-900 text-slate-100;
   }
 }
 
