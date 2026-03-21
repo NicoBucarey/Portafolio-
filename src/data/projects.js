@@ -68,7 +68,7 @@ export const projects = [
     technologies: ["Laravel", "PHP", "MySQL"],
     image: "/projects/blog-turismo.png",
     demoUrl:
-      "https://laravel-blog-turismo-argentino-production.up.railway.app/",
+      "https://web-production-434c9.up.railway.app/",
     repoUrl: "https://github.com/NicoBucarey/Laravel---Blog-Turismo-Argentino.git",
     featured: false,
   },
