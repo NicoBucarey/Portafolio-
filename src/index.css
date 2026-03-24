@@ -2,74 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Animaciones personalizadas */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
+/* =========================
+   🎯 ANIMACIONES (limpias)
+========================= */
 
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
   }
 }
 
-@keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 30px rgba(99, 102, 241, 0.6);
-  }
-}
+/* =========================
+   SCROLL
+========================= */
 
-/* Scroll suave para toda la página */
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
 }
 
-/* Mejoras tipográficas */
+html[data-theme='light'] {
+  color-scheme: light;
+}
+
+/* =========================
+   BASE
+========================= */
+
 @layer base {
   body {
-    @apply bg-slate-900 text-slate-100;
+    @apply bg-slate-950 text-slate-100;
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: system-ui, -apple-system, sans-serif;
   }
 
   #root {
-    @apply bg-slate-900 text-slate-100;
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  .app-shell {
+    min-height: 100vh;
+  }
+
+  /* =========================
+     LIGHT MODE (ajustado)
+  ========================= */
+
+  html[data-theme='light'] body,
+  html[data-theme='light'] #root,
+  html[data-theme='light'] .app-shell {
+    background-color: rgb(241 245 249);
+    color: rgb(15 23 42);
+  }
+
+  html[data-theme='light'] .text-slate-100,
+  html[data-theme='light'] .text-slate-200,
+  html[data-theme='light'] .text-slate-300 {
+    color: rgb(51 65 85);
+  }
+
+  html[data-theme='light'] .text-slate-400 {
+    color: rgb(71 85 105);
+  }
+
+  html[data-theme='light'] h1.text-white,
+  html[data-theme='light'] h2.text-white,
+  html[data-theme='light'] h3.text-white,
+  html[data-theme='light'] h4.text-white {
+    color: rgb(15 23 42);
+  }
+
+  html[data-theme='light'] .hover\:text-white:hover {
+    color: rgb(30 41 59);
+  }
+
+  html[data-theme='light'] .bg-slate-900,
+  html[data-theme='light'] .bg-slate-900\/70,
+  html[data-theme='light'] .bg-slate-900\/80,
+  html[data-theme='light'] .bg-slate-900\/90 {
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+
+  html[data-theme='light'] .bg-slate-800\/30,
+  html[data-theme='light'] .bg-slate-800\/40,
+  html[data-theme='light'] .bg-slate-800\/50,
+  html[data-theme='light'] .bg-slate-800\/60,
+  html[data-theme='light'] .bg-slate-700\/30,
+  html[data-theme='light'] .bg-slate-700\/40,
+  html[data-theme='light'] .bg-slate-700\/50,
+  html[data-theme='light'] .bg-slate-700\/60 {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  html[data-theme='light'] .border-slate-800\/50,
+  html[data-theme='light'] .border-slate-700\/50,
+  html[data-theme='light'] .border-slate-600,
+  html[data-theme='light'] .border-slate-600\/30,
+  html[data-theme='light'] .border-slate-600\/50,
+  html[data-theme='light'] .border-slate-500\/70 {
+    border-color: rgba(148, 163, 184, 0.55);
+  }
+
+  html[data-theme='light'] nav {
+    border-color: rgba(148, 163, 184, 0.35);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+  }
+
+  html[data-theme='light'] .hover\:bg-slate-800\/40:hover,
+  html[data-theme='light'] .hover\:bg-slate-700\/40:hover,
+  html[data-theme='light'] .hover\:bg-slate-700\/30:hover,
+  html[data-theme='light'] .hover\:bg-slate-600\/50:hover {
+    background-color: rgba(226, 232, 240, 0.75);
+  }
+
+  html[data-theme='light'] .bg-clip-text.text-transparent {
+    background-image: linear-gradient(90deg, rgb(15 23 42), rgb(79 70 229), rgb(124 58 237));
+    -webkit-text-fill-color: transparent;
+  }
+
+  html[data-theme='light'] .text-indigo-400 {
+    color: rgb(79 70 229);
   }
 }
 
-/* Utilidades personalizadas */
+/* =========================
+   UTILIDADES
+========================= */
+
 @layer utilities {
-  .animate-shimmer {
-    animation: shimmer 2s infinite;
-  }
-  
+
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
-  
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
-  }
-  
+
   .glass {
-    backdrop-filter: blur(10px);
-    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(12px);
+    background: rgba(30, 41, 59, 0.35);
     border: 1px solid rgba(100, 116, 139, 0.2);
   }
-  
+
   .text-gradient {
-    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #c084fc 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #818cf8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
