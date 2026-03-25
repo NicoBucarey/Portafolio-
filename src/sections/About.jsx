@@ -16,7 +16,7 @@ function About() {
         <div className="grid md:grid-cols-2 gap-5 sm:gap-6">
 
           {/* TEXTO EN CARD */}
-          <div className="p-5 sm:p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 backdrop-blur-xl">
+          <div className="p-5 sm:p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 backdrop-blur-xl text-center">
             <div className="space-y-4 text-slate-300 leading-relaxed text-base">
 
               <p>
@@ -40,7 +40,7 @@ function About() {
           {/* CARDS */}
           <div className="space-y-5 sm:space-y-4">
 
-            <div className="p-4 sm:p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition">
+            <div className="p-4 sm:p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition text-center">
               <h3 className="text-white text-lg font-semibold mb-1">
                 🧠 Enfoque
               </h3>
@@ -49,7 +49,7 @@ function About() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition">
+            <div className="p-4 sm:p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition text-center">
               <h3 className="text-white text-lg font-semibold mb-1">
                 ⚙️ Stack
               </h3>
@@ -58,7 +58,7 @@ function About() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition">
+            <div className="p-4 sm:p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition text-center">
               <h3 className="text-white text-lg font-semibold mb-1">
                 🚀 Objetivo
               </h3>
