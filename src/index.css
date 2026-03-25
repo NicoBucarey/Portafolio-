@@ -68,11 +68,20 @@ html[data-theme='light'] {
     color: rgb(71 85 105);
   }
 
+  html[data-theme='light'] .text-slate-500 {
+    color: rgb(100 116 139);
+  }
+
   html[data-theme='light'] h1.text-white,
   html[data-theme='light'] h2.text-white,
   html[data-theme='light'] h3.text-white,
   html[data-theme='light'] h4.text-white {
     color: rgb(15 23 42);
+  }
+
+  html[data-theme='light'] section h2,
+  html[data-theme='light'] section h3 {
+    letter-spacing: 0.01em;
   }
 
   html[data-theme='light'] .hover\:text-white:hover {
