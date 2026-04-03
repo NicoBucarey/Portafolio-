@@ -33,6 +33,10 @@ function Navbar({ theme, onToggleTheme }) {
     ? 'p-2 text-slate-700 rounded-lg hover:bg-slate-200/70 transition-colors'
     : 'p-2 text-slate-300 rounded-lg hover:bg-slate-800/50 transition-colors'
 
+  const logoClass = isLightMode ? 'text-lg font-semibold text-slate-700' : 'text-lg font-semibold text-slate-100'
+  const desktopLinksClass = isLightMode ? 'flex items-center gap-4 xl:gap-6 text-sm text-slate-700' : 'flex items-center gap-4 xl:gap-6 text-sm text-slate-300'
+  const desktopLinkClass = isLightMode ? 'hover:text-indigo-600 transition-colors whitespace-nowrap' : 'hover:text-white transition-colors whitespace-nowrap'
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
@@ -49,23 +53,23 @@ function Navbar({ theme, onToggleTheme }) {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
 
         {/* LOGO */}
-        <span className="text-lg font-semibold text-slate-100">
+        <span className={logoClass}>
           Nicolas <span className="text-indigo-400">Bucarey</span>
         </span>
 
         {/* DESKTOP */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0">
 
-          <ul className="flex gap-6 text-sm text-slate-300">
-            <li><a href="#about" className="hover:text-white transition">Sobre mí</a></li>
-            <li><a href="#technologies" className="hover:text-white transition">Tecnologías</a></li>
-            <li><a href="#projects" className="hover:text-white transition">Proyectos</a></li>
+          <ul className={desktopLinksClass}>
+            <li><a href="#about" className={desktopLinkClass}>Sobre mí</a></li>
+            <li><a href="#technologies" className={desktopLinkClass}>Tecnologías</a></li>
+            <li><a href="#projects" className={desktopLinkClass}>Proyectos</a></li>
           </ul>
 
           {/* CTA */}
           <a
             href="#contact"
-            className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm transition"
+            className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm transition whitespace-nowrap"
           >
             Contacto
           </a>
@@ -81,7 +85,7 @@ function Navbar({ theme, onToggleTheme }) {
         </div>
 
         {/* MOBILE */}
-        <div className="md:hidden flex items-center gap-2">
+        <div className="lg:hidden flex items-center gap-2">
 
           <button
             onClick={handleThemeToggle}
@@ -108,7 +112,7 @@ function Navbar({ theme, onToggleTheme }) {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-out ${
           isMenuOpen ? 'max-h-80 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2 pointer-events-none'
         }`}
       >

@@ -47,6 +47,20 @@ html[data-theme='light'] {
     min-height: 100vh;
   }
 
+  body,
+  #root,
+  .app-shell,
+  nav,
+  section,
+  img,
+  a,
+  button,
+  div {
+    transition-property: background-color, border-color, color, box-shadow, opacity, transform, filter;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
   /* =========================
      LIGHT MODE (ajustado)
   ========================= */
@@ -95,6 +109,11 @@ html[data-theme='light'] {
     background-color: rgba(255, 255, 255, 0.92);
   }
 
+  html[data-theme='light'] .bg-slate-800,
+  html[data-theme='light'] .bg-slate-700 {
+    background-color: rgb(226 232 240);
+  }
+
   html[data-theme='light'] .bg-slate-800\/30,
   html[data-theme='light'] .bg-slate-800\/40,
   html[data-theme='light'] .bg-slate-800\/50,
@@ -120,11 +139,13 @@ html[data-theme='light'] {
     box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
   }
 
+  html[data-theme='light'] .hover\:bg-slate-800:hover,
+  html[data-theme='light'] .hover\:bg-slate-700:hover,
   html[data-theme='light'] .hover\:bg-slate-800\/40:hover,
   html[data-theme='light'] .hover\:bg-slate-700\/40:hover,
   html[data-theme='light'] .hover\:bg-slate-700\/30:hover,
   html[data-theme='light'] .hover\:bg-slate-600\/50:hover {
-    background-color: rgba(226, 232, 240, 0.75);
+    background-color: rgba(203, 213, 225, 0.85);
   }
 
   html[data-theme='light'] .bg-clip-text.text-transparent {
@@ -132,8 +153,14 @@ html[data-theme='light'] {
     -webkit-text-fill-color: transparent;
   }
 
+  html[data-theme='light'] .text-indigo-200,
+  html[data-theme='light'] .text-indigo-300,
   html[data-theme='light'] .text-indigo-400 {
-    color: rgb(79 70 229);
+    color: rgb(67 56 202);
+  }
+
+  html[data-theme='light'] .border-indigo-500\/30 {
+    border-color: rgba(99, 102, 241, 0.4);
   }
 }
 

@@ -1,22 +1,23 @@
 // src/data/projects.js
 
 export const projects = [
-  // {
-  //   id: 1,
-  //   title: "Sistema de gestión para profesionales de la salud",
-  //   description:
-  //     "Aplicación full stack para la gestión de pacientes, turnos y usuarios con distintos roles.",
-  //   highlights: [
-  //     "Roles de usuario (admin, profesional, paciente, secretario)",
-  //     "Gestión de turnos y pacientes",
-  //     "Arquitectura full stack",
-  //   ],
-  //   technologies: ["React", "Node.js", "Express", "PostgreSQL"],
-  //   image: null,
-  //   demoUrl: null,
-  //   repoUrl: "https://github.com/tu-usuario/proyecto-salud",
-  //   // featured: true, // Comentado temporalmente
-  // },
+  {
+    id: 1,
+    title: "MediGestión",
+    description:
+      "Sistema de gestión para consultorios médicos que permite administrar turnos, pacientes y seguimiento clínico.",
+    highlights: [
+      "Gestión de turnos y agenda médica",
+      "Administración de pacientes e historial clínico",
+      "Seguimiento clínico en un entorno profesional",
+    ],
+    technologies: ["React", "Node.js", "Express", "PostgreSQL"],
+    image: "/projects/medigestion.png",
+    videoUrl: "https://youtu.be/viLIjmsucsk",
+    liveUrl: "https://tp-final-medi-gestion.vercel.app/",
+    repoUrl: "https://github.com/NicoBucarey/TPFinal-MediGestion",
+    featured: true,
+  },
 
   {
     id: 2,

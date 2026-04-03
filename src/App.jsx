@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="app-shell bg-slate-900 text-slate-100 transition-colors duration-300">
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
-      <Hero />
+      <Hero theme={theme} />
       <About />
       <Technologies />
       <Projects />
