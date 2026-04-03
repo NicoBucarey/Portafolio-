@@ -114,7 +114,7 @@ function Contact() {
             </a>
             
             <a
-              href="https://wa.me/5491234567890"
+              href="https://wa.me/5492994573646"
               target="_blank"
               rel="noopener noreferrer"
               className="group px-8 py-3 bg-green-600 hover:bg-green-500 rounded-xl text-white font-medium 
